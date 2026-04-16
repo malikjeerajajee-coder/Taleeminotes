@@ -1,0 +1,67 @@
+User-agent: *
+Allow: /
+
+# Disallow admin/internal paths (if any)
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Disallow duplicate/search result pages to prevent thin content
+Disallow: /search.html?
+Disallow: /*?q=*
+Disallow: /*?page=*
+Disallow: /*?sort=*
+Disallow: /*?filter=*
+
+# Disallow print versions
+Disallow: /*?print=*
+Disallow: /print/
+
+# Disallow tracking/analytics scripts (if separate)
+Disallow: /tracking/
+
+# Sitemap location
+Sitemap: https://taleeminotes.com/sitemap.xml
+
+# Crawl-delay (polite crawling - 2 seconds between requests)
+Crawl-delay: 2
+
+# Specific rules for certain crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Block archive.org wayback machine? (set to Allow if you want archiving)
+User-agent: ia_archiver
+Allow: /
