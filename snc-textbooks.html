@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punjab Class 10 Results 2026 - All BISE Boards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-green: #01411C;
+            --accent-green: #016f2e;
+            --light-green: #e8f5e9;
+            --white: #ffffff;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --border: #e0e0e0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: #f8f9fa;
+        }
+        
+        /* Header */
+        header {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%);
+            color: var(--white);
+            padding: 4rem 20px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        /* Search Box */
+        .search-container {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .search-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .form-group {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .form-group label {
+            display: block;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent-green);
+        }
+        
+        .btn-search {
+            background: var(--accent-green);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn-search:hover {
+            background: var(--primary-green);
+        }
+        
+        /* Boards Section */
+        .boards {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--primary-green);
+        }
+        
+        .boards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .board-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            transition: all 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .board-card:hover {
+            border-color: var(--accent-green);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(1, 111, 46, 0.1);
+        }
+        
+        .board-card h3 {
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .board-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        /* News Section */
+        .news {
+            background: var(--white);
+            padding: 4rem 20px;
+        }
+        
+        .news-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .news-card {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        
+        .news-card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .news-content {
+            padding: 1.5rem;
+        }
+        
+        .news-date {
+            color: var(--accent-green);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .news-card h3 {
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+        
+        .news-card p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        /* Guide Section */
+        .guide {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 20px;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .step {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--light-green);
+            color: var(--primary-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: var(--light-green);
+            padding: 4rem 20px;
+        }
+        
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .stat h3 {
+            font-size: 3rem;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat p {
+            color: var(--text-light);
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 3rem 20px 1rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.9;
+            line-height: 2;
+        }
+        
+        .footer-section a:hover {
+            opacity: 1;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            opacity: 0.8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .form-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Punjab Results Hub</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#boards">Boards</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#guide">Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Punjab Class 10 Results 2026 - All BISE Boards</h1>
+            <p>Check your Matric result instantly for all Punjab boards. Fast, accurate, and updated.</p>
+            
+            <div class="search-container">
+                <form class="search-form" onsubmit="searchResult(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rollno">Roll Number</label>
+                            <input type="text" id="rollno" placeholder="Enter your roll number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="board">Select Board</label>
+                            <select id="board" required>
+                                <option value="">Choose your board</option>
+                                <option value="lahore">BISE Lahore</option>
+                                <option value="gujranwala">BISE Gujranwala</option>
+                                <option value="multan">BISE Multan</option>
+                                <option value="faisalabad">BISE Faisalabad</option>
+                                <option value="sargodha">BISE Sargodha</option>
+                                <option value="rawalpindi">BISE Rawalpindi</option>
+                                <option value="bahawalpur">BISE Bahawalpur</option>
+                                <option value="dgkhan">BISE DG Khan</option>
+                                <option value="sahiwal">BISE Sahiwal</option>
+                            </select>
+                        </div>
+                    <button type="submit" class="btn-search">Check Result</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="boards" id="boards">
+        <h2 class="section-title">Select Your BISE Board</h2>
+        <div class="boards-grid">
+            <div class="board-card" onclick="selectBoard('lahore')">
+                <h3>BISE Lahore</h3>
+                <p>Board of Intermediate & Secondary Education Lahore</p>
+            </div>
+            <div class="board-card" onclick="selectBoard('gujranwala')">
+                <h3>BISE Gujranwala</h3>
+                <p>Board of Intermediate & Secondary Education Gujranwala</p>
+            </div>
+            <div class="board-card" onclick="selectBoard('multan')">
+                <h3>BISE Multan</h3>
+                <p>Board of Intermediate & Secondary Education Multan</p>
+            </div>
+            <div class="board-card" onclick="selectBoard('faisalabad')">
+                <h3>BISE Faisalabad</h3>
+                <p>Board of Intermediate & Secondary Education Faisalabad</p>
+            </div>
+            <div class="board-card" onclick="selectBoard('sargodha')">
+                <h3>BISE Sargodha</h3>
+                <p>Board of Intermediate & Secondary Education Sargodha</p>
+            </div>
+            <div class="board-card" onclick="selectBoard('rawalpindi')">
+                <h3>BISE Rawalpindi</h3>
+                <p>Board of Intermediate & Secondary Education Rawalpindi</p>
+            </div>
+            <div class="board-card" onclick="selectBoard('bahawalpur')">
+                <h3>BISE Bahawalpur</h3>
+                <p>Board of Intermediate & Secondary Education Bahawalpur</p>
+            </div>
+            <div class="board-card" onclick="selectBoard('dgkhan')">
+                <h3>BISE DG Khan</h3>
+                <p>Board of Intermediate & Secondary Education DG Khan</p>
+            </div>
+            <div class="board-card" onclick="selectBoard('sahiwal')">
+                <h3>BISE Sahiwal</h3>
+                <p>Board of Intermediate & Secondary Education Sahiwal</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news" id="news">
+        <div class="news-container">
+            <h2 class="section-title">Latest Results News & Updates</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-content">
+                        <div class="news-date">April 10, 2026</div>
+                        <h3>BISE Lahore Matric Result Date Announced</h3>
+                        <p>Punjab boards expected to announce Class 10 results in the last week of July 2026. Stay tuned for official confirmation.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-content">
+                        <div class="news-date">April 8, 2026</div>
+                        <h3>How to Check Result via SMS Code</h3>
+                        <p>All Punjab boards now support SMS result checking. Send your roll number to the board-specific code for instant results.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-content">
+                        <div class="news-date">April 5, 2026</div>
+                        <h3>Matric Position Holders List 2026</h3>
+                        <p>Top position holders from all 9 BISE boards will be announced one day before the official result declaration.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="guide" id="guide">
+        <h2 class="section-title">How to Check Your Class 10 Result</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Enter Roll Number</h3>
+                <p>Type your correct roll number as printed on your roll number slip</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Select Your Board</h3>
+                <p>Choose your respective BISE board from the dropdown menu</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Click Check Result</h3>
+                <p>Hit the search button to view your detailed mark sheet instantly</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Download/Save</h3>
+                <p>Save or print your result for admission and record purposes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat">
+                <h3>9</h3>
+                <p>BISE Boards</p>
+            </div>
+            <div class="stat">
+                <h3>2M+</h3>
+                <p>Students Yearly</p>
+            </div>
+            <div class="stat">
+                <h3>75%</h3>
+                <p>Avg Pass Rate</p>
+            </div>
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Result Access</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Punjab Results Hub</h4>
+                <p>Your trusted source for Punjab Class 10 / Matric results across all BISE boards.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Check Result</a></li>
+                    <li><a href="#boards">All Boards</a></li>
+                    <li><a href="#news">Latest News</a></li>
+                    <li><a href="#guide">Result Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>BISE Boards</h4>
+                <ul>
+                    <li><a href="#">BISE Lahore</a></li>
+                    <li><a href="#">BISE Gujranwala</a></li>
+                    <li><a href="#">BISE Multan</a></li>
+                    <li><a href="#">View All Boards</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Punjab Results Hub. All rights reserved. Not affiliated with official BISE boards.</p>
+        </div>
+    </footer>
+
+    <script>
+        function searchResult(e) {
+            e.preventDefault();
+            const rollno = document.getElementById('rollno').value;
+            const board = document.getElementById('board').value;
+            alert(`Searching result for Roll No: ${rollno} from ${board.toUpperCase()} board.\n\nNote: Connect this to your backend API or official BISE website to fetch real results.`);
+        }
+        
+        function selectBoard(boardName) {
+            document.getElementById('board').value = boardName;
+            document.getElementById('rollno').focus();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

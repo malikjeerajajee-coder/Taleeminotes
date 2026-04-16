@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Download latest KPK Board textbooks PDF for Class 9, 10, 11, 12. Updated editions including English, Urdu, Mathematics, Physics, Chemistry, Biology, and other subjects.">
-    <meta name="keywords" content="KPK textbooks PDF, 9th class books KPK Board, 10th class books KPK Board, 11th class books, 12th class books, KPK Board latest edition">
-    <meta name="author" content="TaleemiNotes.com">
-    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="description" content="Page not found — TaleemiNotes.com. Browse Class 9-12 notes, PDF books, guess papers, past papers, pairing schemes & online quizzes for Punjab Board & FBISE.">
+    <meta name="robots" content="noindex, follow">
     <meta name="theme-color" content="#1e293b">
-    <link rel="canonical" href="https://taleeminotes.com/kpk-textbooks.html">
+    <link rel="canonical" href="https://taleeminotes.com/404.html">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://taleeminotes.com/kpk-textbooks.html">
-    <meta property="og:title" content="KPK Textbooks PDF - Latest Edition for Class 9-12 | TaleemiNotes.com">
-    <meta property="og:description" content="Download free latest KPK Board books PDF for Class 9, 10, 11, 12. Updated editions for all subjects.">
+    <meta property="og:url" content="https://taleeminotes.com/404.html">
+    <meta property="og:title" content="Page Not Found - TaleemiNotes.com">
+    <meta property="og:description" content="The page you're looking for doesn't exist. Explore free notes, books, guess papers, and pairing schemes for Class 9-12.">
     <meta property="og:image" content="https://taleeminotes.com/assets/og-cover.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <title>KPK Textbooks PDF - Latest Edition for Class 9-12 | TaleemiNotes.com</title>
+    <title>404 - Page Not Found | TaleemiNotes.com</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
@@ -47,16 +45,17 @@
         }
         .container {
             max-width: 1280px;
-            margin: 0 auto;            padding: 0 2rem;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
-        /* Layout */
+        /* Layout — exactly as homepage */
         .two-columns {
             display: grid;
             grid-template-columns: 280px 1fr;
             gap: 2rem;
             margin: 2rem 0;
         }
-        /* Sidebar */
+        /* Sidebar - Desktop only */
         .sidebar {
             background: var(--surface);
             border: 1px solid var(--border);
@@ -67,9 +66,14 @@
             top: 100px;
             box-shadow: var(--shadow-sm);
         }
+        /* Hide sidebar on mobile */
         @media (max-width: 900px) {
-            .sidebar { display: none; }
-            .two-columns { grid-template-columns: 1fr; }
+            .sidebar {
+                display: none;
+            }
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
         }
         .sidebar-item {
             margin-bottom: 0.3rem;
@@ -96,7 +100,8 @@
             transition: transform 0.2s;
         }
         .sidebar-header.open .dropdown-icon {
-            transform: rotate(180deg);        }
+            transform: rotate(180deg);
+        }
         .dropdown-content {
             max-height: 0;
             overflow: hidden;
@@ -104,7 +109,7 @@
             padding-left: 1.5rem;
         }
         .dropdown-content.show {
-            max-height: 500px;
+            max-height: 300px;
         }
         .dropdown-link {
             display: block;
@@ -120,7 +125,7 @@
             color: var(--accent);
             padding-left: 1rem;
         }
-        /* Header */
+        /* Header — identical to home */
         .site-header {
             background: var(--surface);
             border-bottom: 1px solid var(--border);
@@ -145,7 +150,8 @@
         }
         .logo span { color: var(--accent); }
         .desktop-nav {
-            display: flex;            gap: 0.5rem;
+            display: flex;
+            gap: 0.5rem;
             flex-wrap: wrap;
         }
         .desktop-nav a {
@@ -194,7 +200,8 @@
             left: -340px;
             width: min(85%, 320px);
             height: 100%;
-            background: var(--surface);            z-index: 1001;
+            background: var(--surface);
+            z-index: 1001;
             transition: left 0.3s;
             overflow-y: auto;
             padding: 1.5rem;
@@ -226,7 +233,7 @@
             stroke: #475569;
             stroke-width: 1.8;
         }
-        /* Search */
+        /* Search Bar */
         .search-section {
             background: var(--surface);
             border-bottom: 1px solid var(--border);
@@ -243,7 +250,8 @@
             border: 1.5px solid var(--border);
             border-radius: 60px;
             font-size: 0.95rem;
-            background: #f9fafc;        }
+            background: #f9fafc;
+        }
         .search-container input:focus {
             outline: none;
             border-color: var(--accent);
@@ -272,97 +280,97 @@
             font-size: 0.85rem;
             cursor: pointer;
         }
-        /* Page Content */
-        .page-header {
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            border-radius: var(--radius);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            color: white;
-        }
-        .page-header h1 {
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-        }
-        .page-header p {
-            font-size: 0.95rem;
-            opacity: 0.9;
-        }
-        .books-section {
+        /* 404 specific content */
+        .error-card {
             background: var(--surface);
             border: 1px solid var(--border);
-            border-radius: var(--radius);            padding: 1.5rem;
-            margin-bottom: 1.5rem;
+            border-radius: var(--radius);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
         }
-        .section-title {
-            font-size: 1.3rem;
+        .error-code {
+            font-size: 7rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .error-title {
+            font-size: 1.8rem;
             font-weight: 700;
             color: var(--primary);
             margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--border);
         }
-        .class-badge {
-            display: inline-block;
+        .error-desc {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 0.95rem;
+        }
+        .quick-links-404 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1.8rem 0 0.5rem;
+        }
+        .btn-404 {
             background: var(--accent);
             color: white;
-            font-size: 0.7rem;
-            padding: 0.2rem 0.6rem;
-            border-radius: 30px;
-            margin-left: 0.5rem;
-            vertical-align: middle;
-        }
-        .year-badge {
-            display: inline-block;
-            background: #10b981;
-            color: white;
-            font-size: 0.6rem;
-            padding: 0.15rem 0.5rem;
-            border-radius: 30px;
-            margin-left: 0.5rem;
-        }
-        .books-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 0.8rem;
-        }
-        .book-card {
-            background: #fafcff;
-            border: 1px solid var(--border);
-            border-radius: var(--radius-sm);
-            padding: 0.8rem 1rem;
-            transition: all 0.2s;
+            padding: 0.7rem 1.6rem;
+            border-radius: 40px;
+            font-weight: 600;
             text-decoration: none;
-            display: block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.2s;
+            border: none;
             cursor: pointer;
         }
-        .book-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }        .book-title {
-            font-size: 0.9rem;
-            font-weight: 600;
+        .btn-outline-404 {
+            background: transparent;
+            border: 1.5px solid var(--border);
             color: var(--primary);
-            margin-bottom: 0.2rem;
+            padding: 0.7rem 1.6rem;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
         }
-        .book-publisher {
-            font-size: 0.65rem;
-            color: var(--text-muted);
+        .btn-outline-404:hover {
+            border-color: var(--accent);
+            background: #eef2ff;
         }
-        .book-year {
-            font-size: 0.6rem;
-            color: #10b981;
-            font-weight: 500;
-            margin-top: 0.2rem;
+        .suggestion-box {
+            margin-top: 2.5rem;
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            text-align: left;
         }
-        .preview-link {
-            font-size: 0.7rem;
+        .suggestion-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .link-columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.6rem 1.2rem;
+        }
+        .link-columns a {
             color: var(--accent);
-            margin-top: 0.3rem;
-            display: inline-block;
+            text-decoration: none;
+            font-size: 0.85rem;
+            border-bottom: 1px dotted var(--border);
+            padding-bottom: 4px;
         }
+        .link-columns a:hover { color: #1e40af; }
+        /* Footer */
         footer {
             background: #0f172a;
             color: #cbd5e1;
@@ -389,13 +397,17 @@
             border-top: 1px solid #334155;
             font-size: 0.75rem;
         }
+        /* Mobile responsive */
         @media (max-width: 900px) {
-            .desktop-nav { display: none; }            .mobile-menu-btn { display: flex; }
+            .desktop-nav { display: none; }
+            .mobile-menu-btn { display: flex; }
             .container { padding: 0 1.25rem; }
-            .page-header h1 { font-size: 1.4rem; }
+            .error-code { font-size: 5.5rem; }
+            .error-title { font-size: 1.5rem; }
         }
-        @media (min-width: 901px) {
-            .menu-overlay, .side-drawer { display: none; }
+        @media (max-width: 550px) {
+            .link-columns { grid-template-columns: 1fr; }
+            .quick-links-404 { flex-direction: column; }
         }
     </style>
 </head>
@@ -414,7 +426,7 @@
                 <a href="past-papers.html">Past Papers</a>
                 <a href="mdcat-2026.html">MDCAT</a>
             </div>
-            <button class="mobile-menu-btn" id="menuToggleBtn">
+            <button class="mobile-menu-btn" id="menuToggleBtn" aria-label="Open menu">
                 <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -432,16 +444,18 @@
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" id="globalSearch" placeholder="Search for a book, subject, or class...">
+            <input type="text" id="globalSearch" placeholder="Search notes, books, guess papers, past papers...">
             <button id="searchExecute">Search</button>
         </div>
     </div>
 </div>
 
+<!-- Mobile Drawer — identical to home -->
 <div class="menu-overlay" id="menuOverlay"></div>
-<div class="side-drawer" id="sideDrawer">    <div class="drawer-header">
+<div class="side-drawer" id="sideDrawer">
+    <div class="drawer-header">
         <span class="drawer-logo">Taleemi<span>Notes</span></span>
-        <button class="close-drawer" id="closeDrawerBtn">
+        <button class="close-drawer" id="closeDrawerBtn" aria-label="Close menu">
             <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -449,7 +463,9 @@
         </button>
     </div>
     <div class="sidebar-item">
-        <a href="index.html" class="sidebar-header" style="text-decoration:none;"><span>Home</span></a>
+        <a href="index.html" class="sidebar-header" style="text-decoration:none;">
+            <span>Home</span>
+        </a>
     </div>
     <div class="sidebar-item">
         <div class="sidebar-header" data-dropdown-mobile="textbooks">
@@ -488,7 +504,8 @@
             <a href="10th-pairing-scheme-2026.html" class="dropdown-link">10th Pairing Scheme 2026</a>
             <a href="11th-pairing-scheme-2026.html" class="dropdown-link">1st Year Pairing Scheme 2026</a>
             <a href="12th-pairing-scheme-2026.html" class="dropdown-link">2nd Year Pairing Scheme 2026</a>
-        </div>    </div>
+        </div>
+    </div>
     <div class="sidebar-item">
         <div class="sidebar-header" data-dropdown-mobile="guess">
             <span>Guess Papers</span>
@@ -537,12 +554,15 @@
         </div>
     </div>
 </div>
+
 <div class="container">
     <div class="two-columns">
-        <!-- Sidebar -->
+        <!-- Sidebar - exact same as homepage -->
         <aside class="sidebar">
             <div class="sidebar-item">
-                <a href="index.html" class="sidebar-header" style="text-decoration:none;"><span>Home</span></a>
+                <a href="index.html" class="sidebar-header" style="text-decoration:none;">
+                    <span>Home</span>
+                </a>
             </div>
             <div class="sidebar-item">
                 <div class="sidebar-header" data-dropdown="textbooks">
@@ -586,7 +606,8 @@
             <div class="sidebar-item">
                 <div class="sidebar-header" data-dropdown="guess">
                     <span>Guess Papers</span>
-                    <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"/></svg>                </div>
+                    <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
                 <div class="dropdown-content" id="dropdown-guess">
                     <a href="9th-guess-papers-2026.html" class="dropdown-link">9th Guess Papers 2026</a>
                     <a href="10th-guess-papers-2026.html" class="dropdown-link">10th Guess Papers 2026</a>
@@ -631,65 +652,41 @@
             </div>
         </aside>
 
-        <!-- Main Content -->
+        <!-- Main content - 404 message -->
         <main>
-            <div class="page-header">
-                <h1>KPK Textbooks PDF</h1>
-                <p>Download latest KPK Board books for Class 9, 10, 11, and 12. Click on any book to preview and download.</p>            </div>
-
-            <!-- Class 9 Books -->
-            <div class="books-section">
-                <h2 class="section-title">Class 9 Books <span class="class-badge">Matric Part 1</span></h2>
-                <div class="books-grid">
-                    <a href="book-preview.html?book=kpk-9-biology" class="book-card"><div class="book-title">Biology</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade IX</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-9-chemistry" class="book-card"><div class="book-title">Chemistry</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade IX</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-9-physics" class="book-card"><div class="book-title">Physics</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade IX</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-9-english" class="book-card"><div class="book-title">English</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 9</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-9-pak-study" class="book-card"><div class="book-title">Pakistan Studies</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 9</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-9-drawing" class="book-card"><div class="book-title">Drawing</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 9</div><div class="preview-link">Click to preview →</div></a>
+            <div class="error-card">
+                <div class="error-code">404</div>
+                <h1 class="error-title">Page not found</h1>
+                <p class="error-desc">The page you are looking for might have been removed, renamed, or is temporarily unavailable. Let’s get you back on track.</p>
+                <div class="quick-links-404">
+                    <a href="index.html" class="btn-404">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                        Back to Home
+                    </a>
+                    <a href="search.html" class="btn-outline-404">Search site</a>
                 </div>
-            </div>
 
-            <!-- Class 10 Books -->
-            <div class="books-section">
-                <h2 class="section-title">Class 10 Books <span class="class-badge">Matric Part 2</span></h2>
-                <div class="books-grid">
-                    <a href="book-preview.html?book=kpk-10-math" class="book-card"><div class="book-title">Mathematics</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 10</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-10-physics" class="book-card"><div class="book-title">Physics</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 10</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-10-chemistry" class="book-card"><div class="book-title">Chemistry</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 10</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-10-biology" class="book-card"><div class="book-title">Biology</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 10</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-10-computer" class="book-card"><div class="book-title">Computer Science</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 10</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-10-english" class="book-card"><div class="book-title">English</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 10</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-10-urdu" class="book-card"><div class="book-title">Urdu</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 10</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-10-islamiat" class="book-card"><div class="book-title">Islamiat</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 10</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-10-pak-studies" class="book-card"><div class="book-title">Pakistan Studies</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade 10</div><div class="preview-link">Click to preview →</div></a>
+                <div class="suggestion-box">
+                    <h3>📚 You might be looking for…</h3>
+                    <div class="link-columns">
+                        <a href="class-9.html">9th Class Notes & Books</a>
+                        <a href="class-10.html">10th Class Resources</a>
+                        <a href="class-11.html">1st Year (11th) Material</a>
+                        <a href="class-12.html">2nd Year (12th) Material</a>
+                        <a href="guess-papers-2026.html">📄 Guess Papers 2026</a>
+                        <a href="pairing-schemes.html">📌 Pairing Schemes 2026</a>
+                        <a href="past-papers.html">📝 Solved Past Papers</a>
+                        <a href="mdcat-2026.html">🏥 MDCAT 2026</a>
+                        <a href="online-quiz.html">🧠 Online Quiz</a>
+                        <a href="pdf-books.html">📘 PDF Textbooks</a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Class 11 Books -->
-            <div class="books-section">
-                <h2 class="section-title">Class 11 Books <span class="class-badge">HSSC Part 1</span></h2>
-                <div class="books-grid">
-                    <a href="book-preview.html?book=kpk-11-biology" class="book-card"><div class="book-title">Biology</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade XI</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-11-chemistry" class="book-card"><div class="book-title">Chemistry</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade XI</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-11-physics" class="book-card"><div class="book-title">Physics</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade XI</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-11-math" class="book-card"><div class="book-title">Mathematics</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade XI</div><div class="preview-link">Click to preview →</div></a>
-                </div>
-            </div>
-
-            <!-- Class 12 Books -->
-            <div class="books-section">
-                <h2 class="section-title">Class 12 Books <span class="class-badge">HSSC Part 2</span></h2>
-                <div class="books-grid">
-                    <a href="book-preview.html?book=kpk-12-biology" class="book-card"><div class="book-title">Biology</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade XII</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-12-chemistry" class="book-card"><div class="book-title">Chemistry</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade XII</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-12-physics" class="book-card"><div class="book-title">Physics</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade XII</div><div class="preview-link">Click to preview →</div></a>
-                    <a href="book-preview.html?book=kpk-12-math" class="book-card"><div class="book-title">Mathematics</div><div class="book-publisher">KPK Board</div><div class="book-year">Grade XII</div><div class="preview-link">Click to preview →</div></a>                </div>
             </div>
         </main>
     </div>
 </div>
 
+<!-- Footer identical to homepage -->
 <footer>
     <div class="container">
         <div class="footer-grid">
@@ -706,10 +703,10 @@
             </div>
             <div class="footer-col">
                 <h4>Resources</h4>
-                <a href="textbooks.html">Textbooks</a>
                 <a href="guess-papers-2026.html">Guess Papers</a>
                 <a href="pairing-schemes.html">Pairing Scheme</a>
                 <a href="solved-past-papers.html">Past Papers</a>
+                <a href="online-quiz.html">Online Quiz</a>
             </div>
             <div class="footer-col">
                 <h4>Support</h4>
@@ -718,13 +715,13 @@
                 <a href="privacy.html">Privacy</a>
             </div>
         </div>
-        <div class="copyright">© 2026 TaleemiNotes.com | Free KPK Board textbooks PDF for Class 9-12. Latest editions.</div>
+        <div class="copyright">© 2026 TaleemiNotes.com | Free notes, textbooks, guess papers, pairing schemes & past papers for Pakistani students.</div>
     </div>
 </footer>
 
 <script>
     (function() {
-        // Desktop dropdown
+        // Desktop dropdown toggle
         const dropdownHeaders = document.querySelectorAll('.sidebar-header[data-dropdown]');
         dropdownHeaders.forEach(header => {
             header.addEventListener('click', function(e) {
@@ -733,11 +730,12 @@
                 const content = document.getElementById(`dropdown-${dropdownId}`);
                 if (content) {
                     content.classList.toggle('show');
-                    this.classList.toggle('open');                }
+                    this.classList.toggle('open');
+                }
             });
         });
 
-        // Mobile dropdown
+        // Mobile dropdown toggle
         const mobileHeaders = document.querySelectorAll('.sidebar-header[data-dropdown-mobile]');
         mobileHeaders.forEach(header => {
             header.addEventListener('click', function(e) {
@@ -751,20 +749,28 @@
             });
         });
 
-        // Mobile drawer
+        // Mobile drawer open/close
         const toggle = document.getElementById('menuToggleBtn');
         const drawer = document.getElementById('sideDrawer');
         const overlay = document.getElementById('menuOverlay');
         const closeBtn = document.getElementById('closeDrawerBtn');
         
-        function openDrawer() { drawer.classList.add('open'); overlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
-        function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('active'); document.body.style.overflow = ''; }
+        function openDrawer() { 
+            drawer.classList.add('open'); 
+            overlay.classList.add('active'); 
+            document.body.style.overflow = 'hidden'; 
+        }
+        function closeDrawer() { 
+            drawer.classList.remove('open'); 
+            overlay.classList.remove('active'); 
+            document.body.style.overflow = ''; 
+        }
         
         if(toggle) toggle.addEventListener('click', openDrawer);
         if(closeBtn) closeBtn.addEventListener('click', closeDrawer);
         if(overlay) overlay.addEventListener('click', closeDrawer);
         
-        // Search
+        // Search (redirect to search page)
         const searchInput = document.getElementById('globalSearch');
         const searchBtn = document.getElementById('searchExecute');
         function handleSearch() {
